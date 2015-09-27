@@ -1,0 +1,30 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+//variable declerations
+ long n=0,a=0;
+ long long counter=0;
+ int q=0;
+ long mod=0;
+
+int main(){
+	//number of array elements input
+	cin>>n;
+	//array counter
+	for(int i=0;i<n;i++){
+	cin>>a;
+	counter=counter+a;
+	}
+	//number of operations
+	cin>>q;
+	//algorithm equations
+	q=pow(2.0,q);
+	counter=counter*q;
+	//getting the modlus
+mod=pow(10.0,9.0);
+mod=mod+7;
+counter=counter%mod;
+//printing the output
+cout<<counter;
+	return 0;
+}
